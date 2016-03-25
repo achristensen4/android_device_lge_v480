@@ -1,7 +1,7 @@
-Copyright 2015 - The CyanogenMod Project
+Copyright 2016 - The CyanogenMod Project
 
-Device configuration for LGE G Pad 7 (WIFI)
-===========================================
+Device configuration for LGE G Pad 8 (Wi-Fi)
+============================================
 
 Basic   | Spec Sheet
 -------:|:-------------------------
@@ -10,13 +10,13 @@ CHIPSET | Qualcomm MSM8226 Snapdragon 400
 GPU     | Adreno 305
 Memory  | 1GB RAM
 Shipped Android Version | 4.4.2
-Storage | 8GB
+Storage | 16GB
 MicroSD | Up to 64GB
-Battery | 4000 mAh
-Dimensions | 189.3 x 113.8 x 10.1 mm
+Battery | 4200 mAh
+Dimensions | 210.8 x 124.2 x 9.9 mm
 Display | 800 x 1280 pixels IPS LCD
-Camera  | 3.15 MP, 2048 x 1536 pixels
+Camera  | 5 MP
 Release Date | July 2014
 
 
-![LG G Pad 7.0 WIFI](http://i.imgur.com/2nJzl1X.jpg "LG G Pad 7.0 WIFI")
+![LG G Pad 8.0 Wi-Fi](http://cdn2.gsmarena.com/vv/pics/lg/lg-g-pad-80-2014.jpg "LG G Pad 8.0 Wi-Fi")

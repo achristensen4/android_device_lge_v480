@@ -17,7 +17,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/lge/v400/v400-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/v480/v480-vendor.mk)
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -26,5 +26,5 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# common v4xx
-$(call inherit-product, device/lge/v4xx-common/v4xx.mk)
+# v480
+$(call inherit-product, device/lge/v480/v480.mk)

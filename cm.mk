@@ -1,12 +1,12 @@
-$(call inherit-product, device/lge/v400/full_v400.mk)
+$(call inherit-product, device/lge/v480/full_v480.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 
-PRODUCT_NAME := cm_v400
+PRODUCT_NAME := cm_v480
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE="v400" \
-    PRODUCT_NAME="e7wifi" \
-    BUILD_FINGERPRINT="lge/e7lte_att_us/e7lte:4.4.2/KOT49I.V41010d/V41010d.1406542706:user/release-keys" \
-    PRIVATE_BUILD_DESC="e7lte_att_us-user 4.4.2 KOT49I.V41010d V41010d.1406542706 release-keys"
+    PRODUCT_DEVICE="v480" \
+    PRODUCT_NAME="e8wifi" \
+    BUILD_FINGERPRINT="lge/e8wifi_open_com/e8wifi:4.4.2/KOT49I.V48010b/V48010b.1405304718:user/release-keys" \
+    PRIVATE_BUILD_DESC="e8wifi_open_com 4.4.2 KOT49I.V48010b V48010b.1405304718 release-keys"
