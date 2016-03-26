@@ -106,10 +106,11 @@ PRODUCT_PACKAGES += \
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8226 \
-    gralloc.msm8226 \
     hwcomposer.msm8226 \
     memtrack.msm8226 \
     liboverlay
+
+# Removed gralloc.msm8226. Now using stock gralloc.default.so and gralloc.msm8226.so.
 
 # GPS
 PRODUCT_PACKAGES += \
