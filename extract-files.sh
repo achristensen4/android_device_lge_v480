@@ -46,6 +46,10 @@ else
   fi
 fi
 
+set -e
+export VENDOR=lge
+export DEVICE=v480
+
 #BASE=../../../vendor/$VENDOR/v4xx-common/proprietary
 #rm -rf ../../../vendor/$VENDOR/v4xx-common
 
