@@ -194,8 +194,8 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.e7 \
-    init.e7.rc \
+    fstab.e8wifi \
+    init.e8wifi.rc \
     init.lge.rc \
     init.zetaw-sensor.sh \
     init.zetaw.bt_vendor.rc \
@@ -203,7 +203,7 @@ PRODUCT_PACKAGES += \
     init.zetaw.rc \
     init.zetaw.usb.rc \
     init.zetaw.usb.sh \
-    ueventd.e7.rc
+    ueventd.e8wifi.rc
 
 # RIL symbols
 PRODUCT_PACKAGES += \
