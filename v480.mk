@@ -195,6 +195,7 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.e8wifi \
+    twrp.fstab \
     init.e8wifi.rc \
     init.lge.rc \
     init.zetaw-sensor.sh \

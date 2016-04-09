@@ -28,6 +28,8 @@ TARGET_REQUIRES_BUMP := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/lge/v480/rootdir/etc/fstab.e8wifi
+#RECOVERY_VARIANT := twrp
+#TW_THEME := portrait_hdpi
 
 # inherit from the proprietary version
 -include vendor/lge/v480/BoardConfigVendor.mk

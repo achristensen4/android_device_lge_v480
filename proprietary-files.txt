@@ -259,4 +259,4 @@ vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/libxml.so
 
 # Power
-vendor/lib/hw/power.msm8226.so
+#vendor/lib/hw/power.msm8226.so
