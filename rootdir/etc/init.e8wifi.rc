@@ -24,11 +24,6 @@ on fs
     # Enable zRAM
     swapon_all /fstab.e8wifi
 
-    setprop ro.crypto.fuse_sdcard true
-
-    # Executing tune2fs to reserve some region in /data. (40MB)
-    exec /system/bin/tune2fs -u system -r 10240 /dev/block/platform/msm_sdcc.1/by-name/userdata
-
     # In order to keep plenty of large order chunks.
     write /proc/sys/vm/min_free_kbytes 5120
 
@@ -62,6 +57,8 @@ on boot
    chown system system /sys/devices/virtual/input/lge_touch/lpwg_data
    chmod 664 /sys/devices/virtual/input/lge_touch/lpwg_notify
    chown system radio /sys/devices/virtual/input/lge_touch/lpwg_notify
+   chmod 664 /sys/devices/virtual/input/lge_touch/tap_to_wake
+   chown system radio /sys/devices/virtual/input/lge_touch/tap_to_wake
    chmod 664 /sys/devices/virtual/input/lge_touch/incoming_call
    chown system system /sys/devices/virtual/input/lge_touch/incoming_call
    chmod 664 /sys/devices/virtual/input/lge_touch/lockscreen
@@ -81,6 +78,10 @@ on boot
    chown system graphics /sys/class/graphics/fb0/idle_time
    chmod 0664 /sys/class/graphics/fb0/idle_time
 
+   # Adaptive LMK
+   write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
+   write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 53059
+
 #start camera server as daemon
 service qcamerasvr /system/bin/mm-qcamera-daemon
     class late_start
@@ -99,8 +100,9 @@ service time_daemon /system/bin/time_daemon
    group root
 
 service mpdecision /system/bin/mpdecision --avg_comp
+   class late_start
    user root
-   disabled
+   group system
 
 service thermal-engine /system/bin/thermal-engine
    class main

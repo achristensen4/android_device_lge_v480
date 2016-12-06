@@ -142,13 +142,14 @@ vendor/lib/libquipc_os_api.so
 vendor/lib/libulp2.so
 
 # Graphics
-etc/firmware/a330_pfp.fw
-etc/firmware/a330_pm4.fw
+vendor/firmware/a330_pfp.fw
+vendor/firmware/a330_pm4.fw
 vendor/lib/egl/eglsubAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/libbccQTI.so
 vendor/lib/libC2D2.so
 vendor/lib/libCB.so
 vendor/lib/libOpenCL.so
@@ -162,9 +163,7 @@ vendor/lib/libllvm-qcom.so
 vendor/lib/librs_adreno.so
 vendor/lib/librs_adreno_sha1.so
 vendor/lib/libsc-a3xx.so
-vendor/lib/libscale.so
-lib/hw/gralloc.default.so
-lib/hw/gralloc.msm8226.so
+vendor/lib/libuiblur.so
 
 # IRDA
 bin/irrcServer

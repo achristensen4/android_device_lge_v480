@@ -20,11 +20,10 @@
 TARGET_OTA_ASSERT_DEVICE := v480,e8,e8wifi
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/lge/v4xx
 TARGET_KERNEL_CONFIG := cyanogen_e8wifi_defconfig
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 msm_rtb.filter=0x37 androidboot.hardware=e8wifi
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_REQUIRES_BUMP := true
+BOARD_KERNEL_CMDLINE := console=none user_debug=31 msm_rtb.filter=0x37 androidboot.hardware=e8wifi
+#BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
+#TARGET_REQUIRES_BUMP := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/lge/v480/rootdir/etc/fstab.e8wifi

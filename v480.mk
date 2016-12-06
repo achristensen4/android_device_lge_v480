@@ -30,7 +30,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
-    frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml \
     frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
@@ -101,16 +100,20 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    Snap \
     camera.msm8226
 
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8226 \
+    gralloc.msm8226 \
     hwcomposer.msm8226 \
     memtrack.msm8226 \
     liboverlay
 
-# Removed gralloc.msm8226. Now using stock gralloc.default.so and gralloc.msm8226.so.
+# Gello
+#PRODUCT_PACKAGES += \
+#    Gello
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -166,8 +169,7 @@ PRODUCT_COPY_FILES += \
 
 # Offmode Charging
 PRODUCT_PACKAGES += \
-    charger_res_v4xx \
-    charger_v4xx
+    charger_res_images
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -190,25 +192,28 @@ PRODUCT_PACKAGES += \
 
 # Qualcomm
 PRODUCT_PACKAGES += \
-    libcnefeatureconfig
+    libcnefeatureconfig \
+    librmnetctl \
+    libxml2
+
+# Radio
+PRODUCT_PACKAGES += \
+    libxml2
 
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.e8wifi \
-    twrp.fstab \
     init.e8wifi.rc \
     init.lge.rc \
-    init.zetaw-sensor.sh \
     init.zetaw.bt_vendor.rc \
     init.zetaw.class_core.sh \
+    init.zetaw-sensor.sh \
     init.zetaw.rc \
+    init.zetaw.sh \
+    init.zetaw.syspart_fixup.sh \
     init.zetaw.usb.rc \
     init.zetaw.usb.sh \
     ueventd.e8wifi.rc
-
-# RIL symbols
-PRODUCT_PACKAGES += \
-    liblge
 
 # Thermal
 PRODUCT_COPY_FILES += \
@@ -218,7 +223,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     hostapd \
     hostapd_default.conf \
-    dhcpcd.conf \
     libwcnss_qmi \
     libwpa_client \
     wcnss_service \
