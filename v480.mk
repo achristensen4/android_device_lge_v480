@@ -209,7 +209,6 @@ PRODUCT_PACKAGES += \
     init.zetaw.class_core.sh \
     init.zetaw-sensor.sh \
     init.zetaw.rc \
-    init.zetaw.sh \
     init.zetaw.syspart_fixup.sh \
     init.zetaw.usb.rc \
     init.zetaw.usb.sh \
