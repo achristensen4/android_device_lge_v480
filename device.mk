@@ -26,5 +26,5 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# v480
-$(call inherit-product, device/lge/v480/v480.mk)
+# common v4xx
+$(call inherit-product, device/lge/v4xx-common/v4xx.mk)
