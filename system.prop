@@ -1,2 +1,2 @@
 # No RIL
-ro.radio.noril=true
+ro.radio.noril=false
